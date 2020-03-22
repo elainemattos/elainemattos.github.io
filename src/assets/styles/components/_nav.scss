@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+  display: flex;
+  font-family: $fontBebas;
+  font-weight: bold;
+  flex-direction: row;
+  margin-top: 1%;
+}
+
+.header-home {
+  width: 60%;
+  margin-left: 10%;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.header-items {
+  margin-right: 5%;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: $yellowActive;
+}
+
+.active {
+  color: $yellowActive;
+}
