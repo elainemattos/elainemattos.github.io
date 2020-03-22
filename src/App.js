@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import ReactGA from 'react-ga'
 import Routes from './Routes'
 import { ThemeContext } from './theme/theme-context'
 
@@ -6,6 +7,9 @@ function App() {
   const lightish = `🌚`
   const darkish = `🌝`
   const { theme, toggle, light } = useContext(ThemeContext)
+
+  ReactGA.initialize('UA-149511561-1')
+  ReactGA.pageview(window.location.pathname + window.location.search)
 
   return (
     <div
