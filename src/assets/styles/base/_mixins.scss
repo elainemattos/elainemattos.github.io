@@ -5,17 +5,17 @@
 }
 
 @mixin title {
-  font-family: $fontBebas;
-  font-weight: 700;
-  font-size: 3em;
+  font-family: $fontTitle;
+  font-weight: 400;
+  font-size: 54px;
 
   @include mobile {
-    font-size: 2.3em;
+    font-size: 42px;
   }
 }
 
 @mixin text {
-  font-family: $fontRoboto;
+  font-family: $fontText;
   font-weight: 400;
   margin-left: 20px;
   width: 70%;

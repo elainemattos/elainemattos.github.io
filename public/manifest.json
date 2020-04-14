@@ -3,17 +3,17 @@
   "name": "Elaine Mattos Personal Website",
   "icons": [
     {
-      "src": "warning.png",
+      "src": "hello.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "warning.png",
+      "src": "hello.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "warning.png",
+      "src": "hello.png",
       "type": "image/png",
       "sizes": "512x512"
     }

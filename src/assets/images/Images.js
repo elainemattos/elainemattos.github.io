@@ -1,9 +1,9 @@
-import instagram from './instagram.png'
-import lastfm from './lastfm.png'
-import linkedin from './linkedin.png'
-import telegram from './telegram.png'
-import twitter from './twitter.png'
-import github from './github.png'
+import instagram from './instagram.svg'
+import lastfm from './lastfm.svg'
+import linkedin from './linkedin.svg'
+import telegram from './telegram.svg'
+import twitter from './twitter.svg'
+import github from './github.svg'
 
 import fotoOk from './fotoOk.jpeg'
 
@@ -11,15 +11,14 @@ export const ProfileImage = [{ image: fotoOk, description: "elaine's picture" }]
 
 export const MediaImages = [
   {
-    image: instagram,
-    link: 'https://www.instagram.com/_elainemattos/',
-    description: 'instagram profile',
-  },
-
-  {
     image: linkedin,
     link: 'https://www.linkedin.com/in/elainemattos/',
     description: 'linkedin profile',
+  },
+  {
+    image: github,
+    link: 'https://www.github.com/elainemattos',
+    description: 'github profile',
   },
   {
     image: telegram,
@@ -32,13 +31,13 @@ export const MediaImages = [
     description: 'twitter profile',
   },
   {
-    image: github,
-    link: 'https://www.github.com/elainemattos',
-    description: 'github profile',
-  },
-  {
     image: lastfm,
     link: 'https://www.last.fm/user/elainemattoss',
     description: 'lastfm profile',
+  },
+  {
+    image: instagram,
+    link: 'https://www.instagram.com/_elainemattos/',
+    description: 'instagram profile',
   },
 ]

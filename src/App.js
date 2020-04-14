@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import ReactGA from 'react-ga'
-import Routes from './Routes'
 import { ThemeContext } from './theme/theme-context'
+import Home from './components/Home'
 
 function App() {
   const lightish = `🌚`
@@ -33,7 +33,7 @@ function App() {
       >
         {!light ? darkish : lightish}
       </button>
-      <Routes />
+      <Home />
     </div>
   )
 }

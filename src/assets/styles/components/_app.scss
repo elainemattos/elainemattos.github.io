@@ -1,17 +1,6 @@
 .App {
   height: 100%;
   width: 100%;
-  background: url('../../images/fibo.png'), url('../../images/fibowhite.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-x: 200px;
-  background-position-y: 92%;
-}
-
-.display-song {
-  font-weight: 600;
-  color: $yelllow;
 }
 
 .highlights {
@@ -20,19 +9,6 @@
 }
 
 .lastfm-display {
-  font-family: $fontRoboto;
   font-weight: 700;
   font-size: 14px;
-}
-
-@include mobile {
-  .App {
-    background: url('../../images/fibo1.png'), url('../../images/fibo2.png');
-    background-blend-mode: hard-light;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 110%;
-    background-position-x: 0;
-    background-position-y: 0;
-  }
 }
