@@ -1,40 +1,38 @@
-import React, { useContext } from 'react'
+import React, { useState } from 'react'
 import ReactGA from 'react-ga'
-import { ThemeContext } from './theme/theme-context'
-import Home from './components/Home'
+import { GlobalStyle } from './assets/GlobalStyles'
+import styled, { ThemeProvider } from 'styled-components'
+import ThemeSwitcher from './components/ThemeSwitcher'
+import { lightTheme, darkTheme } from './assets/theme'
+import Wrapper from './components/Wrapper'
+
+const StyledThemeBtn = styled.button`
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+`
 
 function App() {
-  const lightish = `🌚`
-  const darkish = `🌝`
-  const { theme, toggle, light } = useContext(ThemeContext)
-
   ReactGA.initialize('UA-149511561-1')
   ReactGA.pageview(window.location.pathname + window.location.search)
 
+  const [theme, setTheme] = useState(false)
+
+  const toggleTheme = () => {
+    setTheme(theme => !theme)
+  }
+
   return (
-    <div
-      className="App"
-      style={{
-        backgroundColor: theme.backgroundColor,
-        color: theme.color,
-      }}
-    >
-      <button
-        type="button"
-        onClick={toggle}
-        style={{
-          border: 'none',
-          backgroundColor: theme.backgroundColor,
-          color: theme.color,
-          fontSize: '20px',
-          outline: 'none',
-          padding: '5px',
-        }}
-      >
-        {!light ? darkish : lightish}
-      </button>
-      <Home />
-    </div>
+    <ThemeProvider theme={theme ? lightTheme : darkTheme}>
+      <GlobalStyle />
+      <StyledThemeBtn onClick={toggleTheme}>
+        <ThemeSwitcher theme={theme} />
+      </StyledThemeBtn>
+      <Wrapper />
+    </ThemeProvider>
   )
 }
 
