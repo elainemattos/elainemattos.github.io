@@ -65,3 +65,9 @@ export const StyledParagraph = styled.p`
   font-family: 'Karla', sans-serif;
   line-height: 1.4;
 `
+export const GradientText = styled.span`
+  background: -webkit-linear-gradient(left, yellow 0%, red 33%, blue 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+`

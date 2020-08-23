@@ -1,7 +1,14 @@
 import React from 'react'
-import { SpacedTitle, StyledLink, StyledText, StyledParagraph } from '../shared'
+import {
+  SpacedTitle,
+  StyledLink,
+  StyledText,
+  StyledParagraph,
+  GradientText,
+} from '../shared'
 import SubMenu from '../SubMenu'
 import { BackImage } from '../BackImage'
+import { Highlights } from '../Highlights'
 
 const About = () => {
   return (
@@ -16,7 +23,9 @@ const About = () => {
 
       <StyledText>
         <StyledParagraph>
-          Hi, I am Elaine Mattos, a web developer from Sorocaba/Brazil.
+          Hi, I am
+          <GradientText> Elaine Mattos </GradientText>, a web developer and
+          computer science student from Sorocaba/Brazil.
         </StyledParagraph>
         <StyledParagraph>
           The greatest pleasure of my life is listen to music so I listen as
@@ -26,8 +35,12 @@ const About = () => {
           I also have aphantasia, so it's self explanatory my bad design :x
         </StyledParagraph>
         <StyledParagraph>
-          Anyways... here's what got me going during this week!
+          Anyways... here's what got me going during this week:
         </StyledParagraph>
+        <Highlights
+          userName={process.env.REACT_APP_API_USER}
+          apiKey={process.env.REACT_APP_API_KEY}
+        />
       </StyledText>
     </>
   )
