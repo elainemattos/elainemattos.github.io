@@ -10,4 +10,10 @@ export const Menu = styled.div`
   &:hover {
     background-color: ${props => darken(0.1, props.color)};
   }
+
+  @media (max-width: 768px) {
+    height: 50px;
+    width: 70vw;
+    border-bottom: 2px solid white;
+  }
 `

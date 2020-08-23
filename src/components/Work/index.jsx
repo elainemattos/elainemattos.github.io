@@ -1,16 +1,20 @@
 import React from 'react'
 import { SpacedTitle, StyledLink } from '../shared'
 import SubMenu from '../SubMenu'
+import { BackImage } from '../BackImage'
 
-const Portfolio = () => {
+const Work = () => {
   return (
     <>
       <SpacedTitle>
-        <StyledLink to="/">🡠</StyledLink> Portfolio
+        <StyledLink to="/">
+          <BackImage />
+        </StyledLink>
+        Work
       </SpacedTitle>
       <SubMenu />
     </>
   )
 }
 
-export default Portfolio
+export default Work

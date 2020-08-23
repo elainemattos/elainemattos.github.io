@@ -7,6 +7,7 @@ const LittleLink = styled(NavLink)`
   height: 10px;
   padding: 0 5px;
   background-color: ${props => props.color};
+  font-family: 'Arimo', sans-serif;
   color: #f1f1f1;
 
   .selected {
@@ -25,14 +26,14 @@ const LittleLink = styled(NavLink)`
 const SubMenu = () => {
   return (
     <div style={{ paddingLeft: '20px' }}>
-      <LittleLink activeClassName="selected" to="/about" color={'#d72e34'}>
-        sobre
+      <LittleLink activeClassName="selected" to="/about" color={'#eec535'}>
+        about
       </LittleLink>
-      <LittleLink activeClassName="selected" to="/portfolio" color={'#6fb32e'}>
-        portfolio
+      <LittleLink activeClassName="selected" to="/work" color={'#cd292a'}>
+        work
       </LittleLink>
-      <LittleLink activeClassName="selected" to="/contact" color={'#1b87a9'}>
-        contato
+      <LittleLink activeClassName="selected" to="/contact" color={'#32287e'}>
+        contact
       </LittleLink>
     </div>
   )

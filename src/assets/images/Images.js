@@ -37,7 +37,7 @@ export const MediaImages = [
   },
   {
     image: instagram,
-    link: 'https://www.instagram.com/_elainemattos/',
+    link: 'https://www.instagram.com/elainemattoss_/',
     description: 'instagram profile',
   },
 ]
