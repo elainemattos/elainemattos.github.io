@@ -25,15 +25,15 @@ const About = () => {
       <StyledText>
         <StyledParagraph>
           Hi, I am
-          <GradientText> Elaine Mattos </GradientText>, web developer and
+          <GradientText> Elaine Mattos </GradientText>, a web developer and
           computer science student from Sorocaba/Brazil.
         </StyledParagraph>
         <StyledParagraph>
-          The greatest pleasure of my life is listen to music so I listen as
-          much as I can, that's why coding is so fun to me.
+          The greatest pleasure of my life is listening to music so I listen to
+          it as much as I can, that's why coding is so fun to me.
         </StyledParagraph>
         <StyledParagraph>
-          I also have aphantasia, so it's self explanatory my bad design :x
+          I also have aphantasia, so it's self-explanatory my bad design :x
         </StyledParagraph>
 
         <Highlights

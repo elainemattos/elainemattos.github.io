@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { getData } from '../../utils/api'
-import { StyledParagraph } from '../shared'
+import { StyledParagraph, FadeDiv } from '../shared'
 
 const Bands = styled.ul`
   font-family: 'Karla', sans-serif;
@@ -27,7 +27,7 @@ export const Highlights = ({ userName, apiKey }) => {
   return !artists ? (
     ''
   ) : (
-    <div>
+    <FadeDiv>
       <StyledParagraph>
         Anyways... here's what got me going during this week:
       </StyledParagraph>
@@ -37,6 +37,6 @@ export const Highlights = ({ userName, apiKey }) => {
             return <li key={band.name}> {band.name}</li>
           })}
       </Bands>
-    </div>
+    </FadeDiv>
   )
 }

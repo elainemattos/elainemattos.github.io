@@ -70,3 +70,7 @@ export const GradientText = styled.span`
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 `
+
+export const FadeDiv = styled.div`
+  animation: ${Fade} 1s linear;
+`

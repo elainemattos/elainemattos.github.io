@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { getData } from '../../utils/api'
-import { GradientText, StyledParagraph } from '../shared'
+import { GradientText, StyledParagraph, FadeDiv } from '../shared'
 
 export const LastSong = ({ userName, apiKey }) => {
   const [lastfmData, updateLastfmData] = useState({})
@@ -26,17 +26,19 @@ export const LastSong = ({ userName, apiKey }) => {
   return !track ? (
     ''
   ) : (
-    <StyledParagraph>
-      The last song I heard was:{' '}
-      <GradientText>
-        <a
-          href={`https://www.youtube.com/results?search_query=${displaySong}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {displaySong}
-        </a>
-      </GradientText>
-    </StyledParagraph>
+    <FadeDiv>
+      <StyledParagraph>
+        The last song I heard was:{' '}
+        <GradientText>
+          <a
+            href={`https://www.youtube.com/results?search_query=${displaySong}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {displaySong}
+          </a>
+        </GradientText>
+      </StyledParagraph>
+    </FadeDiv>
   )
 }
