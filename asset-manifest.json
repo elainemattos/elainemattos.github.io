@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.js": "/static/js/main.f5ba2714.chunk.js",
-    "main.js.map": "/static/js/main.f5ba2714.chunk.js.map",
+    "main.js": "/static/js/main.b6f99e57.chunk.js",
+    "main.js.map": "/static/js/main.b6f99e57.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.28420706.js",
     "runtime-main.js.map": "/static/js/runtime-main.28420706.js.map",
-    "static/js/2.fde2e15a.chunk.js": "/static/js/2.fde2e15a.chunk.js",
-    "static/js/2.fde2e15a.chunk.js.map": "/static/js/2.fde2e15a.chunk.js.map",
+    "static/js/2.f67aa7f0.chunk.js": "/static/js/2.f67aa7f0.chunk.js",
+    "static/js/2.f67aa7f0.chunk.js.map": "/static/js/2.f67aa7f0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0a680d9ab2257d1817692c780c8dca7a.js": "/precache-manifest.0a680d9ab2257d1817692c780c8dca7a.js",
+    "precache-manifest.9ff9c6f8f5f7e9df30b9fbc6215d930c.js": "/precache-manifest.9ff9c6f8f5f7e9df30b9fbc6215d930c.js",
     "service-worker.js": "/service-worker.js",
-    "static/media/back.svg": "/static/media/back.3eff3486.svg"
+    "static/media/back.svg": "/static/media/back.3eff3486.svg",
+    "static/media/github.svg": "/static/media/github.e4f2d6b0.svg",
+    "static/media/instagram.svg": "/static/media/instagram.453685fb.svg",
+    "static/media/lastfm.svg": "/static/media/lastfm.b585546a.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.96141e3d.svg",
+    "static/media/telegram.svg": "/static/media/telegram.ba2e0e2b.svg",
+    "static/media/twitter.svg": "/static/media/twitter.a57ea219.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.28420706.js",
-    "static/js/2.fde2e15a.chunk.js",
-    "static/js/main.f5ba2714.chunk.js"
+    "static/js/2.f67aa7f0.chunk.js",
+    "static/js/main.b6f99e57.chunk.js"
   ]
 }
