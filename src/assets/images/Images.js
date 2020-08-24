@@ -5,10 +5,6 @@ import telegram from './telegram.svg'
 import twitter from './twitter.svg'
 import github from './github.svg'
 
-import fotoOk from './fotoOk.jpeg'
-
-export const ProfileImage = [{ image: fotoOk, description: "elaine's picture" }]
-
 export const MediaImages = [
   {
     image: linkedin,

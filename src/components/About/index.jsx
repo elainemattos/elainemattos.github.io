@@ -9,6 +9,7 @@ import {
 import SubMenu from '../SubMenu'
 import { BackImage } from '../BackImage'
 import { Highlights } from '../Highlights'
+import { LastSong } from '../LastSong'
 
 const About = () => {
   return (
@@ -24,7 +25,7 @@ const About = () => {
       <StyledText>
         <StyledParagraph>
           Hi, I am
-          <GradientText> Elaine Mattos </GradientText>, a web developer and
+          <GradientText> Elaine Mattos </GradientText>, web developer and
           computer science student from Sorocaba/Brazil.
         </StyledParagraph>
         <StyledParagraph>
@@ -34,10 +35,13 @@ const About = () => {
         <StyledParagraph>
           I also have aphantasia, so it's self explanatory my bad design :x
         </StyledParagraph>
-        <StyledParagraph>
-          Anyways... here's what got me going during this week:
-        </StyledParagraph>
+
         <Highlights
+          userName={process.env.REACT_APP_API_USER}
+          apiKey={process.env.REACT_APP_API_KEY}
+        />
+
+        <LastSong
           userName={process.env.REACT_APP_API_USER}
           apiKey={process.env.REACT_APP_API_KEY}
         />

@@ -50,12 +50,11 @@ export const StyledThemeBtn = styled.button`
 `
 
 export const StyledText = styled.div`
-  margin: 50px 20px;
+  margin: 20px 20px 0px 20px;
   width: 60vw;
   font-size: 18px;
 
   @media (max-width: 768px) {
-    margin: 20px;
     width: 80vw;
     font-size: 16px;
   }

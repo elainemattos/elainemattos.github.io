@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { getData } from '../../utils/api'
+import { StyledParagraph } from '../shared'
 
 const Bands = styled.ul`
   font-family: 'Karla', sans-serif;
   line-height: 1.4;
   list-style-type: none;
   font-weight: bold;
-  /* margin-top: 10px; */
+  margin: 10px 0;
 `
 
 export const Highlights = ({ userName, apiKey }) => {
@@ -27,6 +28,9 @@ export const Highlights = ({ userName, apiKey }) => {
     ''
   ) : (
     <div>
+      <StyledParagraph>
+        Anyways... here's what got me going during this week:
+      </StyledParagraph>
       <Bands>
         {artists &&
           artists.artist.map(band => {
