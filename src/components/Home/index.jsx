@@ -12,6 +12,11 @@ const Container = styled.div`
   animation: ${Fade} 1s linear;
   width: 75vw;
   margin-left: 10vw;
+
+  @media (max-width: 768px) {
+    padding-top: 100px;
+    margin-left: 10vw;
+  }
 `
 
 const Home = () => {

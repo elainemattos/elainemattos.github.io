@@ -23,9 +23,17 @@ const LittleLink = styled(NavLink)`
   }
 `
 
+const Container = styled.div`
+  padding-left: 20px;
+
+  @media (max-width: 768px) {
+    margin-top: 10px;
+  }
+`
+
 const SubMenu = () => {
   return (
-    <div style={{ paddingLeft: '20px' }}>
+    <Container>
       <LittleLink activeClassName="selected" to="/about" color={'#eec535'}>
         about
       </LittleLink>
@@ -35,7 +43,7 @@ const SubMenu = () => {
       <LittleLink activeClassName="selected" to="/contact" color={'#32287e'}>
         contact
       </LittleLink>
-    </div>
+    </Container>
   )
 }
 

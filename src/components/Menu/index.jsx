@@ -13,7 +13,6 @@ export const Menu = styled.div`
 
   @media (max-width: 768px) {
     height: 50px;
-    width: 100%;
-    border-bottom: 2px solid white;
+    width: 100vw;
   }
 `

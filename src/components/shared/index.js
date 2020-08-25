@@ -32,7 +32,8 @@ export const MenuLinks = styled.div`
 
   @media (max-width: 768px) {
     position: relative;
-    top: 15px;
+    top: 5px;
+    padding-left: 5px;
   }
 `
 
