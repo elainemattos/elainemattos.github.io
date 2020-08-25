@@ -5,6 +5,6 @@ export const Title = styled.h1`
   font-size: 42px;
 
   @media (max-width: 768px) {
-    padding: 20px;
+    padding: 20px 5px;
   }
 `

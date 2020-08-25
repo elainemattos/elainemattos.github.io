@@ -31,7 +31,7 @@ const Work = () => {
       </StyledText>
 
       <StyledText>
-        <StyledTitle>Proativa</StyledTitle>
+        <StyledTitle>Quinto - Proativa</StyledTitle>
         <Date>AUGUST/2019 - APRIL/2020</Date>
         <StyledParagraph>Web Developer</StyledParagraph>
       </StyledText>
@@ -50,7 +50,7 @@ const Work = () => {
 
       <StyledText>
         <StyledTitle>Woopi - Stefanini</StyledTitle>
-        <Date>FEBRUARY/2018 -FEBRUARY/2019</Date>
+        <Date>FEBRUARY/2018 - FEBRUARY/2019</Date>
         <StyledParagraph>Software Tester Intern</StyledParagraph>
       </StyledText>
     </>

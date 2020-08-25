@@ -10,24 +10,15 @@ const Container = styled.div`
   transform: rotate(-30deg);
   transition: transform 300ms ease-in-out;
   animation: ${Fade} 1s linear;
-
-  @media (max-width: 768px) {
-    transform: rotate(0deg);
-    padding-top: 25px;
-  }
-`
-
-const MenuMedia = styled.div`
-  @media (max-width: 768px) {
-    padding-top: 80px;
-  }
+  width: 75vw;
+  margin-left: 10vw;
 `
 
 const Home = () => {
   return (
     <Container>
       <Title>ELAINE MATTOS</Title>
-      <MenuMedia>
+      <div>
         <Link to="/about">
           <Menu color={'#eec535'}>
             <MenuLinks to="/about"> About</MenuLinks>
@@ -43,7 +34,7 @@ const Home = () => {
             <MenuLinks> Contact</MenuLinks>
           </Menu>
         </Link>
-      </MenuMedia>
+      </div>
     </Container>
   )
 }
